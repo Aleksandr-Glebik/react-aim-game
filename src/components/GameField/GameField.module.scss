@@ -1,0 +1,24 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.game__field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    background: #e7e7e7;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.game__start {
+    background-color: #fff;
+}
