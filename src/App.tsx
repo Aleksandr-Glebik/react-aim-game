@@ -10,6 +10,8 @@ function App() {
   // console.log('statusGame', statusGame);
   const [gameTime, setGameTimer] = useState('5')
   // console.log('gameTime', gameTime);
+  const [scoreClick, setScoreClick] = useState(0)
+  console.log('scoreClick', scoreClick);
 
   return (
     <div className="app">
@@ -17,10 +19,13 @@ function App() {
         statusGame={statusGame}
         gameTime={gameTime}
         setStatusGame={setStatusGame}
+        scoreClick={scoreClick}
       />
       <GameField
         statusGame={statusGame}
         setStatusGame={setStatusGame}
+        scoreClick={scoreClick}
+        setScoreClick={setScoreClick}
       />
       <Footer
         statusGame={statusGame}

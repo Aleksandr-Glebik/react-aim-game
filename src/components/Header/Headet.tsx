@@ -5,10 +5,16 @@ import styles from './Header.module.scss'
 interface HeaderPropsType {
   statusGame: boolean
   gameTime: string
+  scoreClick: number
   setStatusGame: (value: boolean) => void
 }
 
-const Header: React.FC<HeaderPropsType> = ( { statusGame, gameTime, setStatusGame } ) => {
+const Header: React.FC<HeaderPropsType> = ({
+  statusGame,
+  gameTime,
+  setStatusGame,
+  scoreClick
+}) => {
   const [timerValue, setTimerValue] = useState(gameTime)
 
   useEffect( () => {
@@ -40,7 +46,7 @@ const Header: React.FC<HeaderPropsType> = ( { statusGame, gameTime, setStatusGam
         id="result-header"
       >
         Результат игры:
-        <span id="result"> 0</span>
+        <span id="result"> {scoreClick}</span>
       </h1>}
     </div>
   )
