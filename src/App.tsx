@@ -6,23 +6,24 @@ import GameField from './components/GameField/GameField';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const [startGame, setStartGame] = useState(false)
-  console.log('startGame', startGame);
+  const [statusGame, setStatusGame] = useState(false)
+  // console.log('statusGame', statusGame);
   const [gameTime, setGameTimer] = useState('5')
-  console.log('gameTime', gameTime);
+  // console.log('gameTime', gameTime);
 
   return (
     <div className="app">
       <Header
-        startGame={startGame}
+        statusGame={statusGame}
         gameTime={gameTime}
+        setStatusGame={setStatusGame}
       />
       <GameField
-        startGame={startGame}
-        setStartGame={setStartGame}
+        statusGame={statusGame}
+        setStatusGame={setStatusGame}
       />
       <Footer
-        startGame={startGame}
+        statusGame={statusGame}
         gameTime={gameTime}
         setGameTimer={setGameTimer}
       />

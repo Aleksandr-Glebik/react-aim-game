@@ -5,16 +5,16 @@ import styles from './Button.module.scss'
 import clsx from 'clsx'
 
 interface ButtonPropsType {
-    startGame: boolean
-    setStartGame: (value: boolean) => void
+    statusGame: boolean
+    setStatusGame: (value: boolean) => void
 }
 
-const Button: React.FC<ButtonPropsType> = ( { startGame, setStartGame } ) => {
+const Button: React.FC<ButtonPropsType> = ( { statusGame, setStatusGame } ) => {
   return (
     <button
-        className={clsx(styles.btn, startGame && 'hide')}
+        className={clsx(styles.btn, statusGame && 'hide')}
         id="start-game"
-        onClick={() => setStartGame(true)}
+        onClick={() => setStatusGame(true)}
     >
         Начать
     </button>

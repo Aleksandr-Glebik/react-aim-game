@@ -5,16 +5,16 @@ import Button from '../Button/Button'
 import clsx from 'clsx'
 
 interface GameFieldPropsType {
-  startGame: boolean
-  setStartGame: (value: boolean) => void
+  statusGame: boolean
+  setStatusGame: (value: boolean) => void
 }
 
-const GameField: React.FC<GameFieldPropsType> = ( { startGame, setStartGame } ) => {
+const GameField: React.FC<GameFieldPropsType> = ( { statusGame, setStatusGame } ) => {
   return (
-    <div className={clsx(styles.content, startGame && 'game__start' )}>
-        <Button startGame={startGame} setStartGame={setStartGame} />
+    <div className={clsx(styles.content, statusGame && 'game__start' )}>
+        <Button statusGame={statusGame} setStatusGame={setStatusGame} />
         <div
-          className={clsx(styles.game__field, startGame && styles.game__start ) }
+          className={clsx(styles.game__field, statusGame && styles.game__start ) }
           id="game-field"
         >
         </div>

@@ -3,12 +3,12 @@ import React from 'react'
 import styles from './Footer.module.scss'
 
 interface FooterPropsType {
-    startGame: boolean
+    statusGame: boolean
     gameTime: string
     setGameTimer: (value: string) => void
 }
 
-const Footer: React.FC<FooterPropsType> = ( { startGame, gameTime, setGameTimer } ) => {
+const Footer: React.FC<FooterPropsType> = ( { statusGame, gameTime, setGameTimer } ) => {
   return (
     <div className={styles.footer}>
         <div className={styles.container}>
@@ -27,7 +27,7 @@ const Footer: React.FC<FooterPropsType> = ( { startGame, gameTime, setGameTimer 
                 value={gameTime}
                 onChange={(event) => setGameTimer(event.target.value)}
                 step="1"
-                disabled={startGame}
+                disabled={statusGame}
             />
         </div>
     </div>
