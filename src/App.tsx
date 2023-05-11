@@ -11,7 +11,7 @@ function App() {
   const [gameTime, setGameTimer] = useState('5')
   // console.log('gameTime', gameTime);
   const [scoreClick, setScoreClick] = useState(0)
-  console.log('scoreClick', scoreClick);
+  // console.log('scoreClick', scoreClick);
 
   return (
     <div className="app">
