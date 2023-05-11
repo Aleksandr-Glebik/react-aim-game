@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-aim-game/static/css/main.a3b5a390.css",
+    "main.js": "/react-aim-game/static/js/main.5575bfd7.js",
+    "index.html": "/react-aim-game/index.html",
+    "main.a3b5a390.css.map": "/react-aim-game/static/css/main.a3b5a390.css.map",
+    "main.5575bfd7.js.map": "/react-aim-game/static/js/main.5575bfd7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3b5a390.css",
+    "static/js/main.5575bfd7.js"
+  ]
+}
