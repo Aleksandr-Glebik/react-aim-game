@@ -1,12 +1,3 @@
-
-export const playGame = () => {
-    console.log('playGame');
-}
-
-export const overGame = () => {
-    console.log('overGame');
-}
-
 export const getRandomValue = (min: number, max: number): number  => {
     let randomValue = min + Math.random() * (max + 1 - min)
     return Math.floor(randomValue)

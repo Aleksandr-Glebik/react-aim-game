@@ -19,7 +19,7 @@ const Header: React.FC<HeaderPropsType> = ({
 
   useEffect( () => {
     setTimerValue(gameTime)
-  }, [gameTime])
+  }, [gameTime, statusGame])
 
   useEffect( () => {
     if (statusGame && +timerValue > 0) {
@@ -28,7 +28,7 @@ const Header: React.FC<HeaderPropsType> = ({
       }, 100)
 
       return () => clearInterval(interval)
-    } else if (statusGame) {
+    } else if (statusGame && +timerValue === 0) {
       setTimerValue('0')
       setStatusGame(false)
     }

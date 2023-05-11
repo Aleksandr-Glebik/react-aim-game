@@ -23,8 +23,13 @@ const GameField: React.FC<GameFieldPropsType> = ({
   const gameFieldSize = fieldGameSize(gameFieldRef.current)
 
   return (
-    <div className={clsx(styles.content, statusGame && 'game__start' )}>
-        <Button statusGame={statusGame} setStatusGame={setStatusGame} />
+    <div className={clsx(styles.content, statusGame && styles.game__start )}>
+        <Button
+          statusGame={statusGame}
+          setStatusGame={setStatusGame}
+          scoreClick={scoreClick}
+          setScoreClick={setScoreClick}
+        />
         <div
           className={clsx(styles.game__field, statusGame && styles.game__start ) }
           id="game-field"

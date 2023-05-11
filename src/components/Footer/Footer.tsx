@@ -1,7 +1,6 @@
 
 import React from 'react'
 import styles from './Footer.module.scss'
-
 interface FooterPropsType {
     statusGame: boolean
     gameTime: string
@@ -23,7 +22,6 @@ const Footer: React.FC<FooterPropsType> = ( { statusGame, gameTime, setGameTimer
                 type="number"
                 id="game-time"
                 min="5"
-                // defaultValue={gameTime}
                 value={gameTime}
                 onChange={(event) => setGameTimer(event.target.value)}
                 step="1"

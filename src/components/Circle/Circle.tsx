@@ -26,7 +26,7 @@ const Circle: React.FC<CirclePropsType> = ( {
 
   useEffect( () => {
     randomCircleSizeRef.current = getRandomValue(30, 100).toString()
-    randomColorRef.current = colorsArray[getRandomValue(0, colorsArray.length)].toString()
+    randomColorRef.current = colorsArray[getRandomValue(0, colorsArray.length)]
 
     if (gameFieldSize) {
       let maxTopValueRef = (gameFieldSize?.height - +randomCircleSizeRef.current)

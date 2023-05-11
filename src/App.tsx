@@ -7,11 +7,8 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   const [statusGame, setStatusGame] = useState(false)
-  // console.log('statusGame', statusGame);
   const [gameTime, setGameTimer] = useState('5')
-  // console.log('gameTime', gameTime);
   const [scoreClick, setScoreClick] = useState(0)
-  // console.log('scoreClick', scoreClick);
 
   return (
     <div className="app">
